@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.modal{
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    display: none;
+
+}
+.modal-window{
+    width: 600px;
+    background-color: white;
+    border: 2px solid #cec5c5;
+    height: 150px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 13px 1px #696666;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+.modal-window span{
+    color: #d2d2d2;
+    align-self: flex-end;
+    font-weight: 600;
+    margin-top: 15px;
+}
+.text{
+    margin-left: 15px;
+}
+.close-btn{
+    width: 70px;
+    align-self: flex-end;
+    margin-right: 10px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+}
+.close-btn:hover{
+    cursor: pointer;
+}
+.line{
+    background-color: #e3e0e0;
+    height: 1px;
+}
+label{
+    font-weight: 600;
+}
+.shopModule{
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    height: 100vh;
+}
+.block{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+.storage-form{
+    margin: 0 auto;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+
+}
+.storage-form input{
+    margin: 10px 0;
+    height: 30px;
+    padding-left: 5px;
+    font-weight: 600;
+}
+.select-form{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 0 auto;
+}
+.btn{
+    height: 30px;
+    text-align: center;
+    width: 100px;
+}
+#storage-area{
+    width: 200px;
+    height: 90px;
+    margin: 10px 0;
+    background-color: #ededed;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+.orders{
+    align-self: flex-start;
+    margin: 20px;
+}
+.order{
+    padding: 15px;
+}
+.count{
+    width: 200px;
+    position: relative;
+
+}
+.count input{
+    width: 200px;
+    height: 35px;
+    padding-left: 5px;
+}
+.arrow{
+    height: 30px;
+    width: 20px;
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* display: none; */
+}
+i{
+    font-size: 20px;
+    color: #5a5a5a;
+}
+.down{
+    transform: rotate(180deg);
+}
+.up, .down{
+    height: 12px;
+    background-color: #e9e9e9;
+}
+.up:hover,.down:hover{
+    cursor: pointer;
+
+}
+.radio-btn{
+    margin: 10px 0;
+}
+span{
+    margin-right: 10px;
+}
+.show{
+    display: flex;
+}

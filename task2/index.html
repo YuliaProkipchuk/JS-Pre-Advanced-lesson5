@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="modal">
+        <div class="modal-window">
+            <span>x</span>
+            <p class="line"></p>
+            <p class="text">Вибачте, але на складі залишилося пива 90 штук</p>
+            <p class="line"></p>
+            <button class="close-btn">Close</button>
+        </div>
+    </div>
+    <div class="shopModule">
+        <div class="storage block">
+            <form name="storage_form" class="storage-form">
+                <label for="balance-count">Баланс</label>
+                <input type="text" name="balance_count" id="" value="1000 грн." disabled>
+                <label for="beer-count">Пиво</label>
+                <input type="text" name="beer_count" id="" value="100 шт." disabled>
+                <label for="wine-count">Вино</label>
+                <input type="text" name="wine_count" id="" value="50 шт." disabled>
+                <label for="pepsi-count">Пепсі</label>
+                <input type="text" name="pepsi_count" id="" value="80 шт." disabled>
+            </form>
+        </div>
+        <div class="selects block">
+            <form name="select_form" class="select-form">
+                <label for="select_count">Кількість</label>
+                <div class="count">
+                    <input type="text" name="select_count" id="">
+                    <div class="arrow">
+                        <div class="up"><i class="uil uil-triangle"></i></div>
+                        <div class="down"><i class="uil uil-triangle"></i></div>
+                    </div>
+                </div>
+
+                <div class="radio-btn">
+                    <input type="radio" name="select_drink" class="select-drink" value="Пиво"><span>Пиво</span>
+                    <input type="radio" name="select_drink" class="select-drink" value="Вино"><span>Вино</span>
+                    <input type="radio" name="select_drink" class="select-drink" value="Пепсі"><span>Пепсі</span>
+                </div>
+                <button class="add-btn btn" name="add_btn">Додати</button>
+                <div id="storage-area"></div>
+                <button class="buy-btn btn" name="buy_btn">Купити</button>
+            </form>
+        </div>
+        <div class="order block">
+            <div class="orders"></div>
+        </div>
+    </div>
+    <script src="shopModule.js" type="module"></script>
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>
